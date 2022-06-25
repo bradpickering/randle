@@ -2,7 +2,6 @@ import Key from "./key";
 import SpecialKey from "./specialKey";
 
 function Keyboard(props) {
-  console.log(props.keys.slice(19, 26));
   return (
     <div className="keyboard flex flex-col space-y-2">
       <div className="top-row flex space-x-2 justify-center">

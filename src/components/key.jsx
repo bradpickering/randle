@@ -1,8 +1,13 @@
 function Key(props) {
+  const handleKeyPress = (event) => {
+    console.log(event);
+  };
+
   let key = (
     <div
       className="flex w-[8vw] h-[14vw] md:w-[56px] xs:h-[77px] bg-[#818384] rounded-lg items-center justify-center cursor-pointer select-none"
       onClick={() => props.getInput(props.char)}
+      onKeyPress={handleKeyPress}
     >
       <div className="inner-key text-white text-xl">{props.char}</div>
     </div>
@@ -12,6 +17,7 @@ function Key(props) {
       <div
         className="flex w-[8vw] h-[14vw] md:w-[56px] xs:h-[77px] bg-[#538d4e] rounded-lg items-center justify-center cursor-pointer select-none"
         onClick={() => props.getInput(props.char)}
+        onKeyPress={handleKeyPress}
       >
         <div className="inner-key text-white text-xl">{props.char}</div>
       </div>
@@ -21,6 +27,7 @@ function Key(props) {
       <div
         className="flex w-[8vw] h-[14vw] md:w-[56px] xs:h-[77px] bg-[#b59f3b] rounded-lg items-center justify-center cursor-pointer select-none"
         onClick={() => props.getInput(props.char)}
+        onKeyPress={handleKeyPress}
       >
         <div className="inner-key text-white text-xl">{props.char}</div>
       </div>
@@ -30,6 +37,7 @@ function Key(props) {
       <div
         className="flex w-[8vw] h-[14vw] md:w-[56px] xs:h-[77px] bg-[#3a3a3b] rounded-lg items-center justify-center cursor-pointer select-none"
         onClick={() => props.getInput(props.char)}
+        onKeyPress={handleKeyPress}
       >
         <div className="inner-key text-white text-xl">{props.char}</div>
       </div>

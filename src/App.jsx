@@ -3,11 +3,63 @@ import Header from "./components/header";
 import Row from "./components/row";
 import Keyboard from "./components/keyboard";
 import Snackbar from "@mui/material/Snackbar";
-import { useState } from "react";
+import { useState, useEffect } from "react";
+
+// create the random word
+let word = [];
+while (word.length < 5) {
+  const randomLetter = Math.random()
+    .toString(36)
+    .replace(/[^a-z]+/g, "")[0]
+    .toUpperCase();
+
+  if (!word.includes(randomLetter)) {
+    word.push(randomLetter);
+  }
+}
 
 function App() {
-  // 'word' of the day
-  const word = ["M", "D", "A", "W", "T"];
+  const handleKeyPress = (e) => {
+    const letter = e.key.toUpperCase();
+    getInput(letter);
+  };
+
+  const allowedKeys = [
+    "A",
+    "B",
+    "C",
+    "D",
+    "E",
+    "F",
+    "G",
+    "H",
+    "I",
+    "J",
+    "L",
+    "M",
+    "N",
+    "O",
+    "P",
+    "Q",
+    "R",
+    "S",
+    "T",
+    "U",
+    "V",
+    "W",
+    "X",
+    "Y",
+    "Z",
+    "ENTER",
+    "BACK",
+  ];
+
+  useEffect(() => {
+    window.addEventListener("keydown", handleKeyPress);
+    return () => {
+      window.removeEventListener("keydown", handleKeyPress);
+    };
+  }, [handleKeyPress]);
 
   const [finished, setFinished] = useState(false);
   const [completed, setCompleted] = useState(false);
@@ -114,12 +166,11 @@ function App() {
   const updateKeyboard = (letter, color) => {
     const index = keys.findIndex((key) => key.key === letter);
     if (keys[index].color !== "green") keys[index].color = color;
-    console.log(keys[index].color);
   };
 
   const getInput = (char) => {
-    console.log("here");
-    if (finished) return;
+    if (char === "BACKSPACE") char = "BACK";
+    if (finished || !allowedKeys.includes(char)) return;
 
     for (let i = 0; i < rows.length; i++) {
       if (!rows[i].rowSubmitted) {
