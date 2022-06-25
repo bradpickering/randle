@@ -292,7 +292,7 @@ function App() {
           />
         </div>
       </div>
-      <div className="flex justify-center mt-8">
+      <div className="flex justify-center mt-8 sticky bottom-0">
         <Keyboard getInput={getInput} keys={keys} />
       </div>
       <Snackbar
