@@ -1,17 +1,17 @@
 {
   "files": {
-    "main.css": "/randle/static/css/main.de3f30ae.css",
-    "main.js": "/randle/static/js/main.4bc28497.js",
+    "main.css": "/randle/static/css/main.211c92a4.css",
+    "main.js": "/randle/static/js/main.6ab383c9.js",
     "static/js/787.6710edcb.chunk.js": "/randle/static/js/787.6710edcb.chunk.js",
     "static/media/HelveticaNeueBoldCondensed.woff": "/randle/static/media/HelveticaNeueBoldCondensed.032c5f4da263ec230768.woff",
     "static/media/karnakcondensed-normal-700.woff": "/randle/static/media/karnakcondensed-normal-700.a6e521ae3e320b10cec0.woff",
     "index.html": "/randle/index.html",
-    "main.de3f30ae.css.map": "/randle/static/css/main.de3f30ae.css.map",
-    "main.4bc28497.js.map": "/randle/static/js/main.4bc28497.js.map",
+    "main.211c92a4.css.map": "/randle/static/css/main.211c92a4.css.map",
+    "main.6ab383c9.js.map": "/randle/static/js/main.6ab383c9.js.map",
     "787.6710edcb.chunk.js.map": "/randle/static/js/787.6710edcb.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.de3f30ae.css",
-    "static/js/main.4bc28497.js"
+    "static/css/main.211c92a4.css",
+    "static/js/main.6ab383c9.js"
   ]
 }
