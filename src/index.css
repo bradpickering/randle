@@ -1,4 +1,5 @@
 body {
+  background-color: #121213;
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
     'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
@@ -11,3 +12,31 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+simple-snack-bar span {
+  margin:auto;
+  text-align: center;
+}
+
+
+@font-face {
+  font-family: 'Karnak';
+  src: local('Karnak'), url(../fonts/karnakcondensed-normal-700.woff) format('woff');
+}
+
+@font-face {
+  font-family: 'Helvetica Neue Bold';
+  src: local('Helvetica Neue Bold'), url(../fonts/HelveticaNeueBoldCondensed.woff) format('woff');
+}
+
+.title {
+  font-family: 'Karnak'
+}
+
+.inner-key, .tile-inner {
+  font-family: 'Helvetica Neue Bold'
+}
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
