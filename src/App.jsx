@@ -166,8 +166,13 @@ function App() {
 
   const updateKeyboard = (letter, color) => {
     const index = keys.findIndex((key) => key.key === letter);
-    if (keys[index].color !== "gray" && color === "gray") return;
-    if (keys[index].color !== "green") keys[index].color = color;
+    if (keys[index].color == "") {
+      keys[index].color = color;
+    } else if (keys[index].color !== "gray" && color === "gray") {
+      return;
+    } else if (keys[index].color !== "green") {
+      keys[index].color = color;
+    }
   };
 
   const getInput = (char) => {
