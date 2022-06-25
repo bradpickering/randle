@@ -1,17 +1,17 @@
 {
   "files": {
     "main.css": "/randle/static/css/main.7693d3ab.css",
-    "main.js": "/randle/static/js/main.c45cbdfd.js",
+    "main.js": "/randle/static/js/main.34fb2880.js",
     "static/js/787.6710edcb.chunk.js": "/randle/static/js/787.6710edcb.chunk.js",
     "static/media/HelveticaNeueBoldCondensed.woff": "/randle/static/media/HelveticaNeueBoldCondensed.032c5f4da263ec230768.woff",
     "static/media/karnakcondensed-normal-700.woff": "/randle/static/media/karnakcondensed-normal-700.a6e521ae3e320b10cec0.woff",
     "index.html": "/randle/index.html",
     "main.7693d3ab.css.map": "/randle/static/css/main.7693d3ab.css.map",
-    "main.c45cbdfd.js.map": "/randle/static/js/main.c45cbdfd.js.map",
+    "main.34fb2880.js.map": "/randle/static/js/main.34fb2880.js.map",
     "787.6710edcb.chunk.js.map": "/randle/static/js/787.6710edcb.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.7693d3ab.css",
-    "static/js/main.c45cbdfd.js"
+    "static/js/main.34fb2880.js"
   ]
 }
