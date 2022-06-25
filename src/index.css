@@ -30,11 +30,17 @@ simple-snack-bar span {
 }
 
 .title {
-  font-family: 'Karnak'
+  font-family: 'Karnak';
+  color: 'black'
 }
 
 .inner-key, .tile-inner {
   font-family: 'Helvetica Neue Bold'
+}
+
+.modal > * {
+  font-family: 'Helvetica Neue Bold';
+  color: white
 }
 
 @tailwind base;
