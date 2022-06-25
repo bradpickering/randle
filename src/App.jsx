@@ -35,6 +35,7 @@ function App() {
     "H",
     "I",
     "J",
+    "K",
     "L",
     "M",
     "N",
@@ -165,6 +166,7 @@ function App() {
 
   const updateKeyboard = (letter, color) => {
     const index = keys.findIndex((key) => key.key === letter);
+    if (keys[index].color !== "gray" && color === "gray") return;
     if (keys[index].color !== "green") keys[index].color = color;
   };
 
