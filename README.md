@@ -1,6 +1,8 @@
 # Randle
 Random letter guessing game inspired by the popular game [Wordle](https://www.nytimes.com/games/wordle/index.html)
 
+Available on my [GitHub Pages](https://bradpickering.github.io/randle/)
+
 ## How to play
  Guess the RANDLE in six tries. There are <strong>NO</strong> duplicate letters (duplicates make it nearly impossible).
  
